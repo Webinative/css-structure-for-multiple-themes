@@ -1,0 +1,21 @@
+.m-btn {
+    margin: 0 1.25em 0 0;
+    border: none;
+    padding: 0.625em;
+    font-size: 1rem;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    min-width: 99px;
+
+    border-radius: 0.375em;
+    box-shadow: 0 0.125em 0.125em rgba(0, 0, 0, 0.25);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--primary {
+        color: #ffffff;
+        background: linear-gradient(180deg, #62BCE2 0%, #339FCD 100%);
+    }
+}

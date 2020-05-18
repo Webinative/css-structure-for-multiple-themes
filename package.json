@@ -1,0 +1,25 @@
+{
+  "name": "css-structure-for-multiple-themes",
+  "version": "1.0.0",
+  "description": "CSS structure to support multiple colour themes",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass --output-style compressed --source-map true -o css/dist/ css/src/",
+    "watch:css": "onchange 'css/src/*.scss' -- npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webinative/css-structure-for-multiple-themes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webinative/css-structure-for-multiple-themes/issues"
+  },
+  "homepage": "https://github.com/Webinative/css-structure-for-multiple-themes#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2"
+  }
+}

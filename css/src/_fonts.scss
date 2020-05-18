@@ -1,0 +1,15 @@
+/*
+* Using CSS @import for demo purpose. Use <link> in real world applications.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@500&display=swap');
+
+%font-family-heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+%font-family-body {
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+}

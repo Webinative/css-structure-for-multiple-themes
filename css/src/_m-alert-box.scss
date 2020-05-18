@@ -1,0 +1,26 @@
+.m-alert-box {
+    margin: auto;
+    border: 1px solid #E4E4E4;
+    max-width: 440px;
+    border-radius: 0.75em;
+    overflow: hidden;
+
+    &__title {
+        @extend %font-family-body;
+        margin: 0;
+        padding: 0.625em 1.25em;
+        text-align: center;
+        color: #656565;
+        background: linear-gradient(180deg, #F5F5F5 0%, #E4E4E4 100%);
+    }
+
+    &__body {
+        margin: 0;
+        padding: 1.875em;
+    }
+
+    &__footer {
+        padding: 1.25em;
+        background-color: #F5F5F5;
+    }
+}

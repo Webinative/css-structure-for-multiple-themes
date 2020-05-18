@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structuring CSS to support multiple themes</title>
+</head>
+<body>
+    <div class="u-page-wrapper">
+        <div class="m-alert-box">
+            <h4 class="m-alert-box__title">
+                Title - Alert Box
+            </h4>
+            <p class="m-alert-box__body">
+                This action has consequences and cannot be undone. Do you wish to continue?
+            </p>
+            <div class="m-alert-box__footer">
+                <div class="u-btn-wrapper">
+                    <button class="m-btn m-btn--primary">Yes</button>
+                    <button class="m-btn">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="css/dist/style.css">
+</body>
+</html>

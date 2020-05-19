@@ -1,6 +1,12 @@
+$m-alert-box: (
+    'border': #E4E4E4,
+    'title-txt': #656565,
+    'footer-bg': #F5F5F5
+);
+
 .m-alert-box {
     margin: auto;
-    border: 1px solid #E4E4E4;
+    border: 1px solid map-get($m-alert-box, 'border');
     max-width: 440px;
     border-radius: 0.75em;
     overflow: hidden;
@@ -10,7 +16,7 @@
         margin: 0;
         padding: 0.625em 1.25em;
         text-align: center;
-        color: #656565;
+        color: map-get($m-alert-box, 'title-txt');
         background: linear-gradient(180deg, #F5F5F5 0%, #E4E4E4 100%);
     }
 
@@ -21,6 +27,6 @@
 
     &__footer {
         padding: 1.25em;
-        background-color: #F5F5F5;
+        background-color: map-get($m-alert-box, 'footer-bg');
     }
 }

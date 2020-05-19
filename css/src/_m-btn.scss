@@ -1,21 +1,31 @@
+$m-btn: (
+    'txt': #4a4a4a,
+    'bg': #ffffff,
+    'box-shadow': rgba(0, 0, 0, 0.25),
+);
+
+$m-btn-primary: (
+    'txt': #ffffff,
+);
+
 .m-btn {
     margin: 0 1.25em 0 0;
     border: none;
     padding: 0.625em;
     font-size: 1rem;
-    color: #4a4a4a;
-    background-color: #ffffff;
+    color: map-get($m-btn, 'txt');
+    background-color: map-get($m-btn, 'bg');
     min-width: 99px;
 
     border-radius: 0.375em;
-    box-shadow: 0 0.125em 0.125em rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.125em 0.125em map-get($m-btn, 'box-shadow');
 
     &:last-child {
         margin-right: 0;
     }
 
     &--primary {
-        color: #ffffff;
+        color: map-get($m-btn-primary, 'txt');
         background: linear-gradient(180deg, #62BCE2 0%, #339FCD 100%);
     }
 }

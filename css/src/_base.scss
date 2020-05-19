@@ -1,3 +1,8 @@
+$base: (
+    'heading-txt': #656565,
+    'body-txt': #787878
+);
+
 * {
     box-sizing: border-box;
 }
@@ -9,10 +14,10 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     @extend %font-family-heading;
-    color: #656565;
+    color: map-get($base, 'heading-txt');
 }
 
 body {
     @extend %font-family-body;
-    color: #787878;
+    color: map-get($base, 'body-txt');
 }
